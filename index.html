@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>Bem vindo</h1>
+
+    <section class="content">
+        <h1>Calculadora</h1>
+        <form id="some-form">
+            <label>Valor 1</label>
+            <input type="text" name="valor1" id="valor1" required autocomplete="off" />
+            <label>Valor 2</label>
+            <input type="text" name="valor2" id="valor2" required autocomplete="off" />
+            <label>Operação</label>
+            <select name="operacao" id="operacao" required>
+                <option value="op1" selected>Soma</option>
+                <option value="op2">Subtração</option>
+                <option value="op3">Multiplicação</option>
+                <option value="op4">Divisão</option>
+            </select>
+            <div class="div-button">
+                <button type="submit" id="submit">
+                    Calcular
+                </button>
+            </div>
+            <label>Resultado</label>
+            <span class="resultado" id="txtResultado">-</span>
+        </form>
+    </section>
+</body>
+
+</html>
